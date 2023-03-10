@@ -44,9 +44,9 @@
                                 <?php
                             }else{
                                 ?>
-                                <!-- // display an alert message if somehow  -->
-                            <div class="alert alert-success text-center ">
-                                <?php echo "Your mail sent successfully to $recipient "?>
+                                <!-- // display an alert message if somehow mail can't be sent   -->
+                            <div class="alert alert-danger text-center ">
+                                <?php echo "Failed while sending your mail!"?>
                             </div>
                                 <?php
 
@@ -55,7 +55,7 @@
                     }
                     ?>
                     <!-- End of PHP Codes -->
-                <form action="#" method="POST" autocomplete="off">
+                <form action="mail.php" method="POST" autocomplete="off">
                     <div class="form-group">
                         <input type="email" name="email"  class="form-control" placeholder="Recipients">
                     </div>
