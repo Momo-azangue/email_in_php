@@ -5,12 +5,14 @@ require '../phpmailer/src/PHPMailer.php';
 require '../phpmailer/src/Exception.php';
 require '../phpmailer/src/SMTP.php';
 
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
 
 if(isset($_POST['send'])){
+    
     $mail= new PHPMailer(true);
 
     $mail->isSMTP();
