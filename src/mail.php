@@ -17,15 +17,15 @@
                 <p class="text-center">Send mail ton anyone for localhost.</p>
                 
                     <!-- End of PHP Codes -->
-                <form action="mail.php" method="POST" autocomplete="off">
+                <form action="send.php" method="POST" autocomplete="off">
                     <div class="form-group">
-                        <input type="email" name="email"  class="form-control" placeholder="Recipients">
+                        <input type="email" name="email"  class="form-control" value=""  placeholder="Recipients">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" class="form-control" placeholder="Subject">
+                        <input type="text" name="subject" class="form-control" value="" placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea name="message" cols="30" rows="10" class="form-control textarea" placeholder="Compose message..."></textarea>
+                        <textarea name="message" cols="30" rows="10" class="form-control textarea"  value=""  placeholder="Compose message..."></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" name="send" class="form-control button btn-primary" value="Send">
